@@ -30,8 +30,4 @@ Framework de Desarrollo
 Gráficos
 
     - GWT Visualizations
-<<<<<<< HEAD
     - Charts4j
-=======
-    - Charts4j
->>>>>>> 6f33b6f8f64c2ec56399dce811aa2b9f58be8965
