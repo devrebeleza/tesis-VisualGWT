@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/12/2012 19:47:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="basededatos.ViewDatosAltura1" table="ViewDatosAltura1" catalog="sgvdb">
+        <composite-id name="id" class="basededatos.ViewDatosAltura1Id">
+            <key-property name="idDatosTodos" type="int">
+                <column name="idDatosTodos" />
+            </key-property>
+            <key-property name="fecha" type="date">
+                <column name="fecha" length="10" />
+            </key-property>
+            <key-property name="hora" type="time">
+                <column name="hora" length="8" />
+            </key-property>
+            <key-property name="velPromAlt1" type="big_decimal">
+                <column name="velPromAlt1" precision="5" />
+            </key-property>
+            <key-property name="dirPromAlt1" type="int">
+                <column name="dirPromAlt1" />
+            </key-property>
+            <key-property name="tempPromAlt1" type="big_decimal">
+                <column name="tempPromAlt1" precision="5" />
+            </key-property>
+            <key-property name="desvioAlt1" type="big_decimal">
+                <column name="desvioAlt1" precision="5" />
+            </key-property>
+            <key-property name="velMaxAlt1" type="big_decimal">
+                <column name="velMaxAlt1" precision="5" />
+            </key-property>
+            <key-property name="dirMaxAlt1" type="int">
+                <column name="dirMaxAlt1" />
+            </key-property>
+            <key-property name="tempMaxAlt1" type="big_decimal">
+                <column name="tempMaxAlt1" precision="5" />
+            </key-property>
+            <key-property name="velMinAlt1" type="big_decimal">
+                <column name="velMinAlt1" precision="5" />
+            </key-property>
+            <key-property name="dirMinAlt1" type="int">
+                <column name="dirMinAlt1" />
+            </key-property>
+            <key-property name="tempMinAlt1" type="big_decimal">
+                <column name="tempMinAlt1" precision="5" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

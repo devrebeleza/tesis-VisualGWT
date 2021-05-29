@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/12/2012 19:47:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="basededatos.ViewDatosComunes" table="ViewDatosComunes" catalog="sgvdb">
+        <composite-id name="id" class="basededatos.ViewDatosComunesId">
+            <key-property name="idDatosTodos" type="int">
+                <column name="idDatosTodos" />
+            </key-property>
+            <key-property name="fecha" type="date">
+                <column name="fecha" length="10" />
+            </key-property>
+            <key-property name="hora" type="time">
+                <column name="hora" length="8" />
+            </key-property>
+            <key-property name="tempProm" type="big_decimal">
+                <column name="tempProm" precision="5" />
+            </key-property>
+            <key-property name="humedad" type="java.lang.Integer">
+                <column name="humedad" />
+            </key-property>
+            <key-property name="presion" type="java.lang.Integer">
+                <column name="presion" />
+            </key-property>
+            <key-property name="tempMax" type="big_decimal">
+                <column name="tempMax" precision="5" />
+            </key-property>
+            <key-property name="tempMin" type="big_decimal">
+                <column name="tempMin" precision="5" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

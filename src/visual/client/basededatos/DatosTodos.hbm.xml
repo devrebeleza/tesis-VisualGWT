@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/12/2012 19:47:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="basededatos.DatosTodos" table="DatosTodos" catalog="sgvdb">
+        <id name="idDatosTodos" type="java.lang.Integer">
+            <column name="idDatosTodos" />
+            <generator class="identity" />
+        </id>
+        <property name="fecha" type="date">
+            <column name="fecha" length="10" not-null="true">
+                <comment>DD/MM/YY</comment>
+            </column>
+        </property>
+        <property name="hora" type="time">
+            <column name="hora" length="8" not-null="true">
+                <comment>HH:MM:SS</comment>
+            </column>
+        </property>
+        <property name="tempProm" type="big_decimal">
+            <column name="tempProm" precision="5">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+        <property name="humedad" type="java.lang.Integer">
+            <column name="humedad">
+                <comment>%</comment>
+            </column>
+        </property>
+        <property name="presion" type="java.lang.Integer">
+            <column name="presion">
+                <comment>hPa</comment>
+            </column>
+        </property>
+        <property name="tempMax" type="big_decimal">
+            <column name="tempMax" precision="5">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+        <property name="tempMin" type="big_decimal">
+            <column name="tempMin" precision="5">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+        <property name="velPromAlt1" type="big_decimal">
+            <column name="velPromAlt1" precision="5" not-null="true">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="dirPromAlt1" type="int">
+            <column name="dirPromAlt1" not-null="true">
+                <comment>&#194;&#176;</comment>
+            </column>
+        </property>
+        <property name="tempPromAlt1" type="big_decimal">
+            <column name="tempPromAlt1" precision="5" not-null="true">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+        <property name="desvioAlt1" type="big_decimal">
+            <column name="desvioAlt1" precision="5" not-null="true">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="velMaxAlt1" type="big_decimal">
+            <column name="velMaxAlt1" precision="5" not-null="true">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="dirMaxAlt1" type="int">
+            <column name="dirMaxAlt1" not-null="true">
+                <comment>&#194;&#176;</comment>
+            </column>
+        </property>
+        <property name="tempMaxAlt1" type="big_decimal">
+            <column name="tempMaxAlt1" precision="5" not-null="true">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+        <property name="velMinAlt1" type="big_decimal">
+            <column name="velMinAlt1" precision="5" not-null="true">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="dirMinAlt1" type="int">
+            <column name="dirMInAlt1" not-null="true">
+                <comment>&#194;&#176;</comment>
+            </column>
+        </property>
+        <property name="tempMinAlt1" type="big_decimal">
+            <column name="tempMinAlt1" precision="5" not-null="true">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+        <property name="velPromAlt2" type="big_decimal">
+            <column name="velPromAlt2" precision="5">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="dirPromAlt2" type="java.lang.Integer">
+            <column name="dirPromAlt2">
+                <comment>&#194;&#176;</comment>
+            </column>
+        </property>
+        <property name="tempPromAlt2" type="big_decimal">
+            <column name="tempPromAlt2" precision="5">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+        <property name="desvioAlt2" type="big_decimal">
+            <column name="desvioAlt2" precision="5">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="velMaxAlt2" type="big_decimal">
+            <column name="velMaxAlt2" precision="5">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="dirMaxAlt2" type="java.lang.Integer">
+            <column name="dirMaxAlt2">
+                <comment>&#194;&#176;</comment>
+            </column>
+        </property>
+        <property name="tempMaxAlt2" type="big_decimal">
+            <column name="tempMaxAlt2" precision="5">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+        <property name="velMinAlt2" type="big_decimal">
+            <column name="velMinAlt2" precision="5">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="dirMinAlt2" type="java.lang.Integer">
+            <column name="dirMinAlt2">
+                <comment>&#194;&#176;</comment>
+            </column>
+        </property>
+        <property name="tempMinAlt2" type="big_decimal">
+            <column name="tempMinAlt2" precision="5">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+        <property name="velPromAlt3" type="big_decimal">
+            <column name="velPromAlt3" precision="5">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="dirPromAlt3" type="java.lang.Integer">
+            <column name="dirPromAlt3">
+                <comment>&#194;&#176;</comment>
+            </column>
+        </property>
+        <property name="tempPromAlt3" type="big_decimal">
+            <column name="tempPromAlt3" precision="5">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+        <property name="desvioAlt3" type="big_decimal">
+            <column name="desvioAlt3" precision="5">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="velMaxAlt3" type="big_decimal">
+            <column name="velMaxAlt3" precision="5">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="dirMaxAlt3" type="java.lang.Integer">
+            <column name="dirMaxAlt3">
+                <comment>&#194;&#176;</comment>
+            </column>
+        </property>
+        <property name="tempMaxAlt3" type="big_decimal">
+            <column name="tempMaxAlt3" precision="5">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+        <property name="velMinAlt3" type="big_decimal">
+            <column name="velMinAlt3" precision="5">
+                <comment>m/s</comment>
+            </column>
+        </property>
+        <property name="dirMinAlt3" type="java.lang.Integer">
+            <column name="dirMinAlt3">
+                <comment>&#194;&#176;</comment>
+            </column>
+        </property>
+        <property name="tempMinAlt3" type="big_decimal">
+            <column name="tempMinAlt3" precision="5">
+                <comment>&#194;&#176;C</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

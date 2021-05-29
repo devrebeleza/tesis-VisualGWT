@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/12/2012 19:47:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="basededatos.DatosPerfilVertical" table="DatosPerfilVertical" catalog="sgvdb">
+        <id name="idDatosPerfilVertical" type="java.lang.Integer">
+            <column name="idDatosPerfilVertical" />
+            <generator class="identity" />
+        </id>
+        <property name="altura" type="int">
+            <column name="altura" not-null="true" />
+        </property>
+        <property name="cantidadXrenglon" type="int">
+            <column name="cantidadXRenglon" not-null="true" />
+        </property>
+        <property name="totalVelocidadPromedio" type="double">
+            <column name="totalVelocidadPromedio" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="totalTempPromedio" type="double">
+            <column name="totalTempPromedio" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="promedioVelocidadRenglon" type="double">
+            <column name="promedioVelocidadRenglon" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="promedioTempRenglon" type="double">
+            <column name="promedioTempRenglon" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

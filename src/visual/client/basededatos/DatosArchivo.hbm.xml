@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/12/2012 19:47:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="basededatos.DatosArchivo" table="DatosArchivo" catalog="sgvdb">
+        <id name="idDatosArchivo" type="java.lang.Integer">
+            <column name="idDatosArchivo" />
+            <generator class="identity" />
+        </id>
+        <property name="lugarAdquisicion" type="string">
+            <column name="lugarAdquisicion" length="45" not-null="true" />
+        </property>
+        <property name="deadband1" type="int">
+            <column name="deadband1" not-null="true" />
+        </property>
+        <property name="deadband2" type="java.lang.Integer">
+            <column name="deadband2" />
+        </property>
+        <property name="deadband3" type="java.lang.Integer">
+            <column name="deadband3" />
+        </property>
+        <property name="sobreescritura" type="string">
+            <column name="sobreescritura" length="2" not-null="true" />
+        </property>
+        <property name="altura1" type="int">
+            <column name="altura1" not-null="true" />
+        </property>
+        <property name="altura2" type="java.lang.Integer">
+            <column name="altura2" />
+        </property>
+        <property name="altura3" type="java.lang.Integer">
+            <column name="altura3" />
+        </property>
+        <property name="intervalo" type="int">
+            <column name="intervalo" not-null="true" />
+        </property>
+        <property name="cantidadPaquetes" type="java.lang.Integer">
+            <column name="cantidadPaquetes" />
+        </property>
+    </class>
+</hibernate-mapping>

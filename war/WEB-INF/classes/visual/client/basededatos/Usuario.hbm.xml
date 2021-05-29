@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/12/2012 19:47:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="basededatos.Usuario" table="Usuario" catalog="sgvdb">
+        <id name="idUsuario" type="java.lang.Integer">
+            <column name="idUsuario" />
+            <generator class="identity" />
+        </id>
+        <property name="usuario" type="string">
+            <column name="usuario" length="45" not-null="true" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="nombre" length="45" not-null="true" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="apellido" length="45" not-null="true" />
+        </property>
+        <property name="rol" type="string">
+            <column name="rol" length="45" not-null="true" />
+        </property>
+        <property name="clave" type="string">
+            <column name="clave" length="45" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" not-null="true" />
+        </property>
+        <property name="activo" type="java.lang.Boolean">
+            <column name="activo" />
+        </property>
+    </class>
+</hibernate-mapping>

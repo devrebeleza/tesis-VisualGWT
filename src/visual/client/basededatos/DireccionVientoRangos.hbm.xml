@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/12/2012 19:47:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="basededatos.DireccionVientoRangos" table="DireccionVientoRangos" catalog="sgvdb">
+        <id name="idDireccionVientoRangos" type="java.lang.Integer">
+            <column name="idDireccionVientoRangos" />
+            <generator class="identity" />
+        </id>
+        <property name="division" type="int">
+            <column name="division" not-null="true" />
+        </property>
+        <property name="inicioRango" type="big_decimal">
+            <column name="inicioRango" precision="5" not-null="true" />
+        </property>
+        <property name="finRango" type="big_decimal">
+            <column name="finRango" precision="5" not-null="true" />
+        </property>
+        <property name="cantDatosAlt1" type="java.lang.Integer">
+            <column name="cantDatosAlt1" />
+        </property>
+        <property name="cantDatosAlt2" type="java.lang.Integer">
+            <column name="cantDatosAlt2" />
+        </property>
+        <property name="cantDatosAlt3" type="java.lang.Integer">
+            <column name="cantDatosAlt3" />
+        </property>
+        <property name="porcentajeAlt1" type="java.lang.Double">
+            <column name="porcentajeAlt1" precision="22" scale="0" />
+        </property>
+        <property name="porcentajeAlt2" type="java.lang.Double">
+            <column name="porcentajeAlt2" precision="22" scale="0" />
+        </property>
+        <property name="porcentajeAlt3" type="java.lang.Double">
+            <column name="porcentajeAlt3" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

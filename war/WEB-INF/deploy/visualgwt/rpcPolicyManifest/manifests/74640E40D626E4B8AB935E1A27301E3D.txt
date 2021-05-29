@@ -1,0 +1,2 @@
+serviceClass: visual.client.AccesoDatosService
+path: 4860A2F57632A564819085EEF85729BD.gwt.rpc

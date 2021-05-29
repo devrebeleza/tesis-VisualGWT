@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/12/2012 19:47:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="basededatos.ViewDatosAltura2" table="ViewDatosAltura2" catalog="sgvdb">
+        <composite-id name="id" class="basededatos.ViewDatosAltura2Id">
+            <key-property name="idDatosTodos" type="int">
+                <column name="idDatosTodos" />
+            </key-property>
+            <key-property name="fecha" type="date">
+                <column name="fecha" length="10" />
+            </key-property>
+            <key-property name="hora" type="time">
+                <column name="hora" length="8" />
+            </key-property>
+            <key-property name="velPromAlt2" type="big_decimal">
+                <column name="velPromAlt2" precision="5" />
+            </key-property>
+            <key-property name="dirPromAlt2" type="java.lang.Integer">
+                <column name="dirPromAlt2" />
+            </key-property>
+            <key-property name="tempPromAlt2" type="big_decimal">
+                <column name="tempPromAlt2" precision="5" />
+            </key-property>
+            <key-property name="desvioAlt2" type="big_decimal">
+                <column name="desvioAlt2" precision="5" />
+            </key-property>
+            <key-property name="velMaxAlt2" type="big_decimal">
+                <column name="velMaxAlt2" precision="5" />
+            </key-property>
+            <key-property name="dirMaxAlt2" type="java.lang.Integer">
+                <column name="dirMaxAlt2" />
+            </key-property>
+            <key-property name="tempMaxAlt2" type="big_decimal">
+                <column name="tempMaxAlt2" precision="5" />
+            </key-property>
+            <key-property name="velMinAlt2" type="big_decimal">
+                <column name="velMinAlt2" precision="5" />
+            </key-property>
+            <key-property name="dirMinAlt2" type="java.lang.Integer">
+                <column name="dirMinAlt2" />
+            </key-property>
+            <key-property name="tempMinAlt2" type="big_decimal">
+                <column name="tempMinAlt2" precision="5" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

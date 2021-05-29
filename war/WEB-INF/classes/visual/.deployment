@@ -1,0 +1,5 @@
+#Mon Jan 23 16:17:36 WARST 2012
+war.name=VisualGWT.war
+compiler.style=OBFUSCATED
+server.path=/media/Datos/workspace/SOCA/VisualGWT/war
+compiler.memory.max=256m

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/12/2012 19:47:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="basededatos.DatosPerfilTemporarioHora" table="DatosPerfilTemporarioHora" catalog="sgvdb">
+        <id name="idDatosPerfilTemporarioHora" type="java.lang.Integer">
+            <column name="idDatosPerfilTemporarioHora" />
+            <generator class="identity" />
+        </id>
+        <property name="hora" type="int">
+            <column name="hora" not-null="true" />
+        </property>
+        <property name="cantidadAlt1" type="int">
+            <column name="cantidadAlt1" not-null="true" />
+        </property>
+        <property name="cantidadAlt2" type="java.lang.Integer">
+            <column name="cantidadAlt2" />
+        </property>
+        <property name="cantidadAlt3" type="java.lang.Integer">
+            <column name="cantidadAlt3" />
+        </property>
+        <property name="totalVelocidadPromedioAlt1" type="double">
+            <column name="totalVelocidadPromedioAlt1" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="totalVelocidadPromedioAlt2" type="java.lang.Double">
+            <column name="totalVelocidadPromedioAlt2" precision="22" scale="0" />
+        </property>
+        <property name="totalVelocidadPromedioAlt3" type="java.lang.Double">
+            <column name="totalVelocidadPromedioAlt3" precision="22" scale="0" />
+        </property>
+        <property name="promedioVelocidadAlt1" type="double">
+            <column name="promedioVelocidadAlt1" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="promedioVelocidadAlt2" type="java.lang.Double">
+            <column name="promedioVelocidadAlt2" precision="22" scale="0" />
+        </property>
+        <property name="promedioVelocidadAlt3" type="java.lang.Double">
+            <column name="promedioVelocidadAlt3" precision="22" scale="0" />
+        </property>
+        <property name="totalDesvioAlt1" type="double">
+            <column name="totalDesvioAlt1" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="totalDesvioAlt2" type="java.lang.Double">
+            <column name="totalDesvioAlt2" precision="22" scale="0" />
+        </property>
+        <property name="totalDesvioAlt3" type="java.lang.Double">
+            <column name="totalDesvioAlt3" precision="22" scale="0" />
+        </property>
+        <property name="promedioDesvioAlt1" type="double">
+            <column name="promedioDesvioAlt1" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="promedioDesvioAlt2" type="java.lang.Double">
+            <column name="promedioDesvioAlt2" precision="22" scale="0" />
+        </property>
+        <property name="promedioDesvioAlt3" type="java.lang.Double">
+            <column name="promedioDesvioAlt3" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
